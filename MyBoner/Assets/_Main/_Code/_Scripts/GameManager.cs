@@ -8,13 +8,14 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private int _vida = 10;
+    [SerializeField]
     private float _tiempoRestante = 60f;
     [SerializeField]
     private int _tiempoentero;
-
+    [SerializeField]
     private bool juegoActivo = true;
 
-    private void Update()
+    public void Update()
     {
         if (juegoActivo)
         {
@@ -24,7 +25,7 @@ public class GameManager : MonoBehaviour
             {
                 juegoActivo = false;
                 Debug.Log("Se acabó el tiempo");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+                
             }
         }
 
@@ -70,4 +71,11 @@ public class GameManager : MonoBehaviour
         }
        
     }
+
+    public int Puntos
+    {
+        get { return _puntos; }
+    }
+
+
 }
