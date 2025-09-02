@@ -1,6 +1,6 @@
 using UnityEngine;
-
-public class HuesitoMoneda : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class MuslitoVida : MonoBehaviour
 {
     [SerializeField]
     private GameManager gameManager;
@@ -9,8 +9,7 @@ public class HuesitoMoneda : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            gameManager.SumarPuntos(1);
-            Debug.Log("ESTOY SUMANDO PUNTOS");
+            gameManager.SumarVida(1);
 
             Destroy(this.gameObject);
         }
