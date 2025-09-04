@@ -1,3 +1,5 @@
+using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,6 +16,10 @@ public class GameManager : MonoBehaviour
     private int _tiempoentero;
     [SerializeField]
     private bool juegoActivo = true;
+    
+    public bool llaveObtenida = false;
+
+    public bool puertaAbierta = false;
 
     public void Update()
     {
@@ -72,6 +78,15 @@ public class GameManager : MonoBehaviour
        
     }
 
+    public void FinJuego()
+    {
+        if (puertaAbierta == true)
+        {
+            Debug.Log("Juego Terminado");
+            SceneManager.LoadScene(3);
+        }
+    }
+
     public int Puntos
     {
         get { return _puntos; }
@@ -85,5 +100,4 @@ public class GameManager : MonoBehaviour
     {
         get { return _tiempoRestante; }
     }
-
 }

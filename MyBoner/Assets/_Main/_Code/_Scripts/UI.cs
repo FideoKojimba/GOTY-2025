@@ -15,7 +15,6 @@ public class UI : MonoBehaviour
     [SerializeField]
     private TMP_Text textoLlave;
 
-    private bool tienellave = false;
 
     private void Update()
     {
@@ -24,11 +23,8 @@ public class UI : MonoBehaviour
             textoVida.text = "Vida: " + gameManager.Vida;
             textoTiempo.text = "Tiempo: " + Mathf.CeilToInt(gameManager.Tiempo);
             textoPuntos.text = "Puntos: " + gameManager.Puntos;
-            textoLlave.text = "Llave: " + (tienellave ? "Sí" : "No");
+            textoLlave.text = "Llave: " + (gameManager.llaveObtenida ? "Sí" : "No");
         }
     }
-    public void ActivarLlave()
-    {
-        tienellave = true;
-    }
+  
 }
