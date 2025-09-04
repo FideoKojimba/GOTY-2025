@@ -76,6 +76,14 @@ public class GameManager : MonoBehaviour
     {
         get { return _puntos; }
     }
+    public int Vida
+    {
+        get { return _vida; }
+    }
 
+    public float Tiempo
+    {
+        get { return _tiempoRestante; }
+    }
 
 }
