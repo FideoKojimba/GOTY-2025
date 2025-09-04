@@ -1084,7 +1084,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 551bb33e1a72256468033fdd4b78b5d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   gameManager: {fileID: 799194596}
+=======
+  GameManager: {fileID: 799194596}
+>>>>>>> Stashed changes
 --- !u!1001 &173683922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6180,7 +6184,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42b40ea3f161494bbdbf44762dc7236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   _tiempoExtra: 20
+=======
+  _tiempoExtra: 110000
+>>>>>>> Stashed changes
   gameManager: {fileID: 799194596}
 --- !u!70 &976731288
 CapsuleCollider2D:
@@ -7527,7 +7535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 799194596}
-  _puntosNecesarios: 10
+  _puntosNecesarios: 1
 --- !u!1 &1306086255
 GameObject:
   m_ObjectHideFlags: 0
@@ -25636,7 +25644,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9c45cec87cc4194bbb7ddd5ca3abee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   gameManager: {fileID: 799194596}
+=======
+  GameManager: {fileID: 799194596}
+>>>>>>> Stashed changes
 --- !u!70 &2086621963
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -25674,6 +25686,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.78125, y: 0.4375}
   m_Direction: 0
+<<<<<<< Updated upstream
 --- !u!1001 &2135046452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25792,6 +25805,8 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.875, y: 0.65625}
   m_Direction: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &1835230442772921347
 PrefabInstance:
   m_ObjectHideFlags: 0

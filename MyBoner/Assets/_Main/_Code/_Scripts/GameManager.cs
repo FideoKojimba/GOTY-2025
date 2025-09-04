@@ -96,8 +96,15 @@ public class GameManager : MonoBehaviour
         get { return _vida; }
     }
 
+<<<<<<< Updated upstream
     public float Tiempo
     {
         get { return _tiempoRestante; }
     }
+=======
+    
+    
+        
+
+>>>>>>> Stashed changes
 }
