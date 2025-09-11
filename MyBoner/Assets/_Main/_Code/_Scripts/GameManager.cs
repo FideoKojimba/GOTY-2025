@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         if (puertaAbierta == true)
         {
             Debug.Log("Juego Terminado");
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
     }
 
