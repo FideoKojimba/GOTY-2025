@@ -1,5 +1,5 @@
 using JetBrains.Annotations;
-using Unity.VisualScripting;
+using Unity.VisualScripting; 
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -100,4 +100,29 @@ public class GameManager : MonoBehaviour
     {
         get { return _tiempoRestante; }
     }
-}
+    public void EstadodelJuego(string estado)
+    {
+        switch (estado)
+        {
+            case "Play":
+                Time.timeScale = 1;
+                break;
+
+            case "Pause":
+                Time.timeScale = 0;
+                break;
+
+            case "Ganaste":
+                break;
+
+            case "Perdiste":
+                break;
+            case "Salir":
+                Application.Quit(); 
+                break;
+        } 
+
+        }
+    }
+
+
