@@ -21,11 +21,25 @@ public class GameManager : MonoBehaviour
 
     public bool puertaAbierta = false;
 
+    [SerializeField] 
+    private GameObject pauseMenuUI;
+
+    private bool isPaused = false;
+
     public void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            EstadodelJuego("Pause");
+            {
+                if (isPaused)
+                {
+                    ResumeGame();
+                }
+                else
+                {
+                    PauseGame();
+                }
+            }
         }
         if (juegoActivo)
         {
@@ -128,7 +142,23 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-    
+
+        public void PauseGame()
+    {
+        pauseMenuUI.SetActive(true);   
+        Time.timeScale = 0f;           
+        isPaused = true;
+    }
+
+    public void ResumeGame()
+    {
+        pauseMenuUI.SetActive(false);  
+        Time.timeScale = 1f;           
+        isPaused = false;
+    }
+
 }
+    
+
 
 
