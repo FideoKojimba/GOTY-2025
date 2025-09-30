@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            EstadodelJuego("Pause");
+        }
         if (juegoActivo)
         {
             _tiempoRestante -= Time.deltaTime;
@@ -73,7 +77,7 @@ public class GameManager : MonoBehaviour
         if (_vida <= 0)
         {
             Debug.Log("El jugador ha muerto, reiniciando escena...");
-            SceneManager.LoadScene(2);
+            EstadodelJuego("Perdiste");
         }
        
     }
@@ -83,7 +87,7 @@ public class GameManager : MonoBehaviour
         if (puertaAbierta == true)
         {
             Debug.Log("Juego Terminado");
-            SceneManager.LoadScene(2);
+            EstadodelJuego("Ganaste");
         }
     }
 
@@ -113,16 +117,18 @@ public class GameManager : MonoBehaviour
                 break;
 
             case "Ganaste":
+                SceneManager.LoadScene(2);
                 break;
 
             case "Perdiste":
+                SceneManager.LoadScene(3);
                 break;
             case "Salir":
-                Application.Quit(); 
+                Application.Quit();
                 break;
-        } 
-
         }
     }
+    
+}
 
 
