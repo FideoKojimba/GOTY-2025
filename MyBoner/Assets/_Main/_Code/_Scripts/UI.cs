@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 public class UI : MonoBehaviour
 {
     [SerializeField]
@@ -14,6 +15,11 @@ public class UI : MonoBehaviour
     private TMP_Text textoPuntos;
     [SerializeField]
     private TMP_Text textoLlave;
+    [SerializeField]
+    private Image[] spritesHeart;
+
+
+
 
 
     private void Update()
@@ -25,6 +31,11 @@ public class UI : MonoBehaviour
             textoPuntos.text = "Puntos: " + gameManager.Puntos;
             textoLlave.text = "Llave: " + (gameManager.llaveObtenida ? "Sí" : "No");
         }
+        for (int i = 0; i < 4; i++)
+        {
+            spritesHeart[i].enabled = false;
+        }
+
     }
   
 }

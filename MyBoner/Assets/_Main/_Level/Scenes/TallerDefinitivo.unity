@@ -12622,7 +12622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1779862181}
   m_Layer: 0
-  m_Name: Barra de vida (1)
+  m_Name: Barra de vida (vacio)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12636,8 +12636,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779862180}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.855, y: 3.513, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.445, y: 4.063, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12646,7 +12646,7 @@ Transform:
   - {fileID: 1910770940}
   - {fileID: 256337296}
   - {fileID: 734763119}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1972109204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1806339258
 PrefabInstance:
@@ -13116,8 +13116,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817801506}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.855, y: 3.513, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.445, y: 4.063, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13126,7 +13126,7 @@ Transform:
   - {fileID: 903302219}
   - {fileID: 1565272670}
   - {fileID: 1024141703}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1972109204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1822655612
 GameObject:
@@ -29688,6 +29688,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6582747259845169099, guid: a3879484d58e7e84aae7907b2f321e29, type: 3}
       insertIndex: -1
       addedObject: {fileID: 294982227}
+    - targetCorrespondingSourceObject: {fileID: 6582747259845169099, guid: a3879484d58e7e84aae7907b2f321e29, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1817801507}
+    - targetCorrespondingSourceObject: {fileID: 6582747259845169099, guid: a3879484d58e7e84aae7907b2f321e29, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1779862181}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6176787615481303844, guid: a3879484d58e7e84aae7907b2f321e29, type: 3}
       insertIndex: -1
@@ -29966,5 +29972,3 @@ SceneRoots:
   - {fileID: 799194597}
   - {fileID: 615781165}
   - {fileID: 678711803}
-  - {fileID: 1817801507}
-  - {fileID: 1779862181}
