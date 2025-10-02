@@ -30,16 +30,19 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            {
+            Debug.Log("Desoprimi la tecla escape");
+
                 if (isPaused)
                 {
+                Debug.Log("ispaused es true");
                     ResumeGame();
                 }
                 else
                 {
+                Debug.Log("ispaused es false");
                     PauseGame();
                 }
-            }
+            
         }
         if (juegoActivo)
         {
@@ -145,6 +148,7 @@ public class GameManager : MonoBehaviour
 
         public void PauseGame()
     {
+        Debug.Log("Se está pausando");
         pauseMenuUI.SetActive(true);   
         Time.timeScale = 0f;           
         isPaused = true;
