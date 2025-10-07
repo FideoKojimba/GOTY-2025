@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEditor.ShaderKeywordFilter;
 public class UI : MonoBehaviour
 {
     [SerializeField]
@@ -17,6 +18,8 @@ public class UI : MonoBehaviour
     private TMP_Text textoLlave;
     [SerializeField]
     private Image[] spritesHeart;
+    [SerializeField]
+    private GameObject[] gameObjectsHeart;
     [SerializeField]
     private Image[] spritesBTDHeart;
 
@@ -35,9 +38,63 @@ public class UI : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             spritesHeart[i].enabled = false;
-            
+
+            if (i == 0)
+            {
+                gameObjectsHeart[0].SetActive(false);
+                gameObjectsHeart[1].SetActive(false);
+                gameObjectsHeart[2].SetActive(false);
+                gameObjectsHeart[3].SetActive(false);
+                gameObjectsHeart[4].SetActive(false);
+            }
+            if (i == 1)
+            {
+                gameObjectsHeart[0].SetActive(true);
+                gameObjectsHeart[1].SetActive(false);
+                gameObjectsHeart[2].SetActive(false);
+                gameObjectsHeart[3].SetActive(false);
+                gameObjectsHeart[4].SetActive(false);
+
+            }
+            if (i == 2)
+            {
+                gameObjectsHeart[0].SetActive(true);
+                gameObjectsHeart[1].SetActive(true);
+                gameObjectsHeart[2].SetActive(false);
+                gameObjectsHeart[3].SetActive(false);
+                gameObjectsHeart[4].SetActive(false);
+            }
+            if (i == 3)
+            {
+                gameObjectsHeart[0].SetActive(true);
+                gameObjectsHeart[1].SetActive(true);
+                gameObjectsHeart[2].SetActive(true);
+                gameObjectsHeart[3].SetActive(false);
+                gameObjectsHeart[4].SetActive(false);
+            }
+            if (i == 4)
+            {
+                gameObjectsHeart[0].SetActive(true);
+                gameObjectsHeart[1].SetActive(true);
+                gameObjectsHeart[2].SetActive(true);
+                gameObjectsHeart[3].SetActive(true);
+                gameObjectsHeart[4].SetActive(false);
+            }
+            if (i == 5)
+            {
+                gameObjectsHeart[0].SetActive(true);
+                gameObjectsHeart[1].SetActive(true);
+                gameObjectsHeart[2].SetActive(true);
+                gameObjectsHeart[3].SetActive(true);
+                gameObjectsHeart[4].SetActive(true);
+            }
         }
+        
 
     }
-  
 }
+
+
+ 
+        
+         

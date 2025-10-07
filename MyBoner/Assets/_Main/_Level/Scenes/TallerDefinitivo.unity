@@ -5376,6 +5376,12 @@ MonoBehaviour:
   - {fileID: 365486738}
   - {fileID: 420450506}
   - {fileID: 864124436}
+  gameObjectsHeart:
+  - {fileID: 1197475059}
+  - {fileID: 832735684}
+  - {fileID: 365486735}
+  - {fileID: 420450503}
+  - {fileID: 864124433}
   spritesBTDHeart:
   - {fileID: 465580415}
   - {fileID: 1040802771}
@@ -6684,7 +6690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _puntos: 0
-  _vida: 10
+  _vida: 5
   _tiempoRestante: 60
   _tiempoentero: 0
   juegoActivo: 1

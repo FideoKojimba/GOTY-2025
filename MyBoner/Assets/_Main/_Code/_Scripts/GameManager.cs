@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private int _puntos = 0;
 
     [SerializeField]
-    private int _vida = 10;
+    private int _vida = 5;
     [SerializeField]
     private float _tiempoRestante = 60f;
     [SerializeField]
@@ -85,7 +85,9 @@ public class GameManager : MonoBehaviour
     public void SumarVida(int cantidad)
     {
         _vida += cantidad;
-        Debug.Log("Vidas Actuales: " + _vida);
+
+        if (_vida > 5)
+            _vida = 5;
     }
     public void RestarVida(int cantidad)
     {
