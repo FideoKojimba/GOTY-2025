@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
             if (_tiempoRestante <= 0)
             {
                 juegoActivo = false;
-                Debug.Log("Se acabó el tiempo");
+                Debug.Log("Se acabo el tiempo");
                 
             }
         }
@@ -150,7 +150,7 @@ public class GameManager : MonoBehaviour
 
         public void PauseGame()
     {
-        Debug.Log("Se está pausando");
+        Debug.Log("Se estï¿½ pausando");
         pauseMenuUI.SetActive(true);   
         Time.timeScale = 0f;           
         isPaused = true;

@@ -33,11 +33,13 @@ public class UI : MonoBehaviour
             textoVida.text = "Vida: " + gameManager.Vida;
             textoTiempo.text = "Tiempo: " + Mathf.CeilToInt(gameManager.Tiempo);
             textoPuntos.text = "Puntos: " + gameManager.Puntos;
-            textoLlave.text = "Llave: " + (gameManager.llaveObtenida ? "Sí" : "No");
+            textoLlave.text = "Llave: " + (gameManager.llaveObtenida ? "Sï¿½" : "No");
         }
-        for (int i = 0; i < 4; i++)
+        for (int i = gameManager.Vida; i < 5; i++)
         {
             spritesHeart[i].enabled = false;
+
+
 
             if (i == 0)
             {
