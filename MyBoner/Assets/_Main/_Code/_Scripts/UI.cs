@@ -17,7 +17,8 @@ public class UI : MonoBehaviour
     private TMP_Text textoLlave;
     [SerializeField]
     private Image[] spritesHeart;
-
+    [SerializeField]
+    private Image[] spritesBTDHeart;
 
 
 
@@ -34,6 +35,7 @@ public class UI : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             spritesHeart[i].enabled = false;
+            
         }
 
     }
